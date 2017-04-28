@@ -1,0 +1,133 @@
+$light-gray: #d1dbe2
+$dark-gray: #434b50
+$bg-gray: #989898
+
+
+html,body
+  height: 100%
+
+body
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+
+img
+  max-width: 100%
+
+p
+  padding: 0
+
+a.nav-link.menu
+  color: $light-gray
+a.nav-link.menu:hover
+  color: $bg-gray
+
+h3
+  color: $light-gray
+
+.bg-inverse
+  background: rgba(0,0,0,0.001) !important
+
+#video-section
+  height: 45rem
+
+#background
+  position: absolute
+  top: 0
+  left: 0
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
+  background-size: cover
+
+
+
+.cover-container
+  width: 100%
+  height: 100%
+  background: url("../img/bald-eagle.jpg") center center no-repeat
+  background-size: cover
+  display: flex
+  align-items: center
+
+
+
+.inner-cover
+  text-align: center
+  color: $light-gray
+  overflow: hidden
+
+#motto
+  padding: 4rem 0
+
+.row.description
+  padding: 2rem 0
+
+#testimonials
+  background-color: lighten($light-gray, 10%)
+  padding: 5rem 0
+
+.carousel-indicators li
+  background-color: $dark-gray
+
+
+#services
+  background: url("../img/laptop.jpg") no-repeat center center fixed
+  padding: 5rem 0
+
+
+h4.card-title
+  color: $light-gray
+
+p.card-text
+  opacity: 0
+
+p.card-text:hover
+  opacity: 1
+  transition: .5s
+  color: $light-gray
+  background: rgba(0,0,0,0.2)
+
+
+
+p.float-left
+  float: left
+
+
+footer
+  background-color: $dark-gray
+  padding: 3rem 0
+  color: white
+  li
+    list-style: none
+  a
+    color: white
+
+footer.blockquote
+  background: none
+  color: $dark-gray
+  font-size: 0.9rem
+
+#contact-form
+  padding: 2rem 0
+
+
+form
+  margin: 1rem 0
+  background-color: $dark-gray
+  padding: 1rem
+  color: $light-gray
+  button
+    text-align: center
+
+.navbar.fixed-top.scrolled
+  background-color: $dark-gray !important
+  transition: background-color 200ms linear
+
+@media (max-width:575px)
+  .video-text
+    font-size: 0.9rem
+
+@media (max-width: 991px)
+  #video-section
+    height: auto
